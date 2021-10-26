@@ -1,0 +1,70 @@
+main.container {
+  margin: 6rem auto 6rem auto;
+}
+
+.graphics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  .graph-wrapper {
+    @include center;
+    padding: 2rem;
+    flex: 1;
+    height: 300px;
+    min-width: 300px;
+
+    border-radius: 1rem;
+    background-color: $dark-color3;
+    box-shadow: inset 2px 2px 6px $dark-black, inset -5px -5px 6px $dark-color1;
+
+    &:hover {
+      box-shadow: 0.1em 0.1em 0.8em $dark-black,
+        -0.8em -0.8em 0.8em $dark-color3;
+    }
+
+    .circle {
+      width: 50%;
+    }
+  }
+}
+
+main .data-graph {
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  .data-item {
+    flex: 1;
+    min-width: 350px;
+    min-height: 75px;
+    @include center;
+    @include button-dark;
+    background: $dark-color1;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 1.4rem;
+      color: $dark-gray;
+    }
+
+    button {
+      @include button-style1;
+      @include center;
+      width: 40px;
+      height: 40px;
+      margin-left: 1rem;
+    }
+  }
+
+  .data-item:first-child {
+    flex: 2;
+  }
+}

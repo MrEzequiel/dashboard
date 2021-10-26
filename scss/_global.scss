@@ -1,0 +1,26 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  background: $dark-color3;
+  color: $dark-white;
+  @include font;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}

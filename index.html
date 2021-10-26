@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <!-- SIDEBAR -->
+    <aside id="sidebar">
+      <div class="container">
+        <button class="close-sidebar">
+          <span class="material-icons"> close </span>
+        </button>
+
+        <nav>
+          <a href="#" class="logo">Logo</a>
+          <ul class="nav-sidebar">
+            <li>
+              <a href="#" class="active">
+                <span class="material-icons"> home </span>
+                Dashboard
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="material-icons"> shopping_cart </span>
+                Products
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="material-icons"> person </span>
+                Clients
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="material-icons"> chat </span>
+                Chat
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+
+    <!-- HEADER -->
+    <header class="container">
+      <div class="search-wrapper">
+        <button class="open-sidebar">
+          <span class="material-icons"> menu </span>
+        </button>
+        <form id="search-form">
+          <input type="search" />
+          <button type="submit">
+            <span class="material-icons"> navigate_next </span>
+          </button>
+        </form>
+      </div>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="#" class="button-nav"
+              ><span class="material-icons"> notifications </span></a
+            >
+          </li>
+
+          <li>
+            <a href="#" class="button-nav">
+              <span class="material-icons"> forum </span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="button-nav">
+              <span class="material-icons"> wb_sunny </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="image-user">
+              <img
+                src="https://cdn.discordapp.com/avatars/387074822968049675/cd7171fa6239ae8578368e793bbf8a9a.png?size=2048"
+                alt="image-perfil"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="logout">
+              <span class="material-icons"> logout </span>
+              Logout
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="container">
+      <div class="graphics">
+        <div class="graph-wrapper">
+          <div class="circle">
+            <canvas id="chart"></canvas>
+          </div>
+        </div>
+        <div class="graph-wrapper">
+          <div>
+            <canvas id="charBar"></canvas>
+          </div>
+        </div>
+        <div class="graph-wrapper">
+          <div>
+            <canvas id="chartLine"></canvas>
+          </div>
+        </div>
+        <div class="graph-wrapper">
+          <div>
+            <canvas id="chartLine2"></canvas>
+          </div>
+        </div>
+        <div class="graph-wrapper">
+          <div>
+            <canvas id="chartLine3"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <div class="data-graph">
+        <div class="data-item">
+          <div class="text">
+            <h2>Lorem ipsum dolor</h2>
+            <p>sit amet consectetur adipisicing elit.</p>
+          </div>
+          <button class="button-data">
+            <span class="material-icons"> build </span>
+          </button>
+        </div>
+
+        <div class="data-item">
+          <div class="text">
+            <h2>Lorem ipsum dolor</h2>
+            <p>sit amet consectetur adipisicing elit.</p>
+          </div>
+          <button class="button-data">
+            <span class="material-icons"> list </span>
+          </button>
+        </div>
+
+        <div class="data-item">
+          <div class="text">
+            <h2>Lorem ipsum dolor</h2>
+            <p>sit amet consectetur adipisicing elit.</p>
+          </div>
+          <button class="button-data">
+            <span class="material-icons"> tune </span>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
