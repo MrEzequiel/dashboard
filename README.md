@@ -24,7 +24,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Projeto desenvolvido no curso no entuito de estudar a biblioteca [Chart JS](https://www.chartjs.org). Este projeto foi baseado em um desafio para devs: [Dev Challenge](https://www.devchallenge.com.br/challenges/6053e47eccbc5900217fecf0/details).
+Projeto desenvolvido no curso no intuito de estudar a biblioteca [Chart JS](https://www.chartjs.org). Este projeto foi baseado em um desafio para devs: [Dev Challenge](https://www.devchallenge.com.br/challenges/6053e47eccbc5900217fecf0/details).
 
 ## 👨‍💻 Autor
 
