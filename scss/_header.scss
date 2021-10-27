@@ -48,11 +48,13 @@ header ul {
   gap: 2rem;
 
   li .button-nav {
+    cursor: pointer;
     @include center;
     @include button-style2;
 
     width: 45px;
     height: 45px;
+    color: var(--dark-white);
 
     span {
       font-size: 1.7rem;

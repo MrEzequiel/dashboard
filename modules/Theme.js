@@ -36,7 +36,7 @@ export default function Theme() {
     changeColors(theme)
     if (color === 'white') {
       themeIcon.innerText = 'wb_sunny'
-      localStorage.setItem('theme', 'white')
+      localStorage.setItem('theme', 'black')
     } else {
       themeIcon.innerText = 'dark_mode'
       localStorage.setItem('theme', 'white')
@@ -53,6 +53,6 @@ export default function Theme() {
 
   const currentTheme = localStorage.getItem('theme')
   currentTheme === 'white'
-    ? changeTheme(lightTheme, 'white')
-    : changeTheme(darkTheme, 'black')
+    ? changeTheme(lightTheme, 'black')
+    : changeTheme(darkTheme, 'white')
 }
