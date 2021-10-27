@@ -9,8 +9,8 @@
 }
 
 body {
-  background: $dark-color3;
-  color: $dark-white;
+  background: var(--dark-color3);
+  color: var(--dark-white);
   @include font;
 }
 

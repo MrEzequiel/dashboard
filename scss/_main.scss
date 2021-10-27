@@ -15,12 +15,13 @@ main.container {
     min-width: 300px;
 
     border-radius: 1rem;
-    background-color: $dark-color3;
-    box-shadow: inset 2px 2px 6px $dark-black, inset -5px -5px 6px $dark-color1;
+    background-color: var(--dark-color3);
+    box-shadow: inset 2px 2px 6px var(--dark-black),
+      inset -5px -5px 6px var(--dark-color1);
 
     &:hover {
-      box-shadow: 0.1em 0.1em 0.8em $dark-black,
-        -0.8em -0.8em 0.8em $dark-color3;
+      box-shadow: 0.1em 0.1em 0.8em var(--dark-black),
+        -0.8em -0.8em 0.8em var(--dark-color3);
     }
 
     .circle {
@@ -41,7 +42,7 @@ main .data-graph {
     min-height: 75px;
     @include center;
     @include button-dark;
-    background: $dark-color1;
+    background: var(--dark-color1);
     padding: 1rem 2rem;
     justify-content: space-between;
 
@@ -52,7 +53,7 @@ main .data-graph {
 
     p {
       font-size: 1.4rem;
-      color: $dark-gray;
+      color: var(--dark-gray);
     }
 
     button {
